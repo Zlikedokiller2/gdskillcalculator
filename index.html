@@ -1,0 +1,74 @@
+<html>
+
+    <head>
+        <title>Skill Calculator</title>
+
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <h1>Skill Calculator</h1>
+
+        <hr/>
+
+        <div id = "tutorial">
+            <h2>This is a dumb website to "Calculate" your skill lol</h2>
+            <p>Enter the number of non extremes you beat then click on "SUBMIT NON EXTREMES"</p>
+            <p>Then input 1 by 1 every extreme you beat in "Extreme Demons beaten" then click "Add Extreme"</p>
+            <p>Once you did allat click on "Calculate" and get your skill points, then flex them or idfk</p>
+        </div>
+
+        <hr/>
+
+        <div id = "info">
+            <p id = "infoed">Easy Demons : 0</p>
+            <p id = "infomd">Medium Demons : 0</p>
+            <p id = "infohd">Hard Demons : 0</p>
+            <p id = "infoid">Insane Demons : 0</p>
+            <p id = "infoexd">Extreme Demons : </p>
+            <br/>
+            <p id="hardest">No Hardest</p>
+            <p id="skillpts">Skill Points : 0</p>
+        </div>
+
+        <hr/>
+
+        <form>
+            <p>Easy Demons Completed</p>
+            <input type="number" id="easydemons" value="0">
+        </form>
+
+        <form>
+            <p>Medium Demons Completed</p>
+            <input type="number" id="mediumdemons" value="0">
+        </form>
+
+        <form>
+            <p>Hard Demons Completed</p>
+            <input type="number" id="harddemons" value="0">
+        </form>
+
+        <form>
+            <p>Insane Demons Completed</p>
+            <input type="number" id="insanedemons" value="0">
+        </form>
+
+        <button onClick="updatenonextremes()">SUMBIT NON EXTREMES</button>
+
+        <form>
+            <p>Extreme Demons Beaten</p>
+            <input type="text" id="extremedemons">
+        </form>
+
+        <button onClick="addnewextreme()">Add Extreme</button>
+        <button onClick="calcSkill()">Calculate</button>
+
+        <hr/>
+
+        <footer>
+            <p>This website is not an accurate representation of your skill.</p>
+            <p>Credits to <a href="https://aredl.net/list/">All Rated Extreme Demons List</a> for extreme demons placements</p>
+        </footer>
+    </body>
+
+</html>
