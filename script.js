@@ -191,7 +191,7 @@ function findhardest() {
     hardeststr = txt;
 
     document.getElementById("hardest").textContent = "Hardest : " + hardeststr;
-}
+};
 
 // Calculate skill using formula
 function calcSkill() {
@@ -285,7 +285,7 @@ function calcSkill() {
 
     console.log(points);
     document.getElementById("skillpts").textContent = "Skill Points : " + String(points);
-}
+};
 
 // Profile
 async function loadProfile() {
@@ -308,4 +308,4 @@ async function loadProfile() {
         console.log(value);
         addnewextremeByName(value);
     }
-}
+};
