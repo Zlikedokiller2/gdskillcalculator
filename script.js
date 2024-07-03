@@ -288,7 +288,7 @@ function calcSkill() {
 };
 
 // Profile
-async function loadProfile() {
+async function loadprofile() {
     id = document.getElementById("aredlinput").value;
     const response = await fetch(profiles + "/" + id);
 
